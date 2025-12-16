@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>N. Kowshik | Portfolio</title>
+  <title>N. Kowshik | Java Backend Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonts & Icons -->
@@ -18,11 +18,7 @@
       --muted: #aaa;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Poppins', sans-serif;
@@ -31,10 +27,7 @@
       line-height: 1.6;
     }
 
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
+    a { color: var(--primary); text-decoration: none; }
 
     .container {
       max-width: 1100px;
@@ -42,7 +35,7 @@
       padding: 0 20px;
     }
 
-    /* ================= NAV ================= */
+    /* NAV */
     nav {
       position: fixed;
       width: 100%;
@@ -65,21 +58,15 @@
       color: var(--primary);
     }
 
-    .nav-links {
-      display: flex;
-      gap: 25px;
-    }
+    .nav-links { display: flex; gap: 25px; }
 
-    .nav-links a:hover {
-      color: #fff;
-    }
+    .nav-links a:hover { color: #fff; }
 
-    /* ================= HERO ================= */
+    /* HERO */
     header {
       height: 100vh;
       display: flex;
       align-items: center;
-      text-align: left;
       background: radial-gradient(circle at top right, rgba(78,168,222,0.15), transparent);
     }
 
@@ -97,9 +84,7 @@
       min-height: 35px;
     }
 
-    .hero-buttons {
-      margin-top: 30px;
-    }
+    .hero-buttons { margin-top: 30px; }
 
     .btn {
       padding: 12px 30px;
@@ -108,6 +93,7 @@
       margin-right: 10px;
       font-weight: 600;
       transition: 0.3s;
+      cursor: pointer;
     }
 
     .btn.primary {
@@ -125,10 +111,8 @@
       color: #000;
     }
 
-    /* ================= SECTIONS ================= */
-    section {
-      padding: 100px 0;
-    }
+    /* SECTIONS */
+    section { padding: 100px 0; }
 
     .section-title {
       font-size: 2.3rem;
@@ -146,7 +130,7 @@
       left: 0;
     }
 
-    /* ================= ABOUT ================= */
+    /* ABOUT */
     .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -159,7 +143,7 @@
       border-radius: 20px;
     }
 
-    /* ================= SKILLS ================= */
+    /* SKILLS */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
@@ -185,7 +169,7 @@
       margin-bottom: 15px;
     }
 
-    /* ================= PROJECTS ================= */
+    /* PROJECTS */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -200,9 +184,7 @@
       position: relative;
     }
 
-    .project:hover {
-      transform: translateY(-10px);
-    }
+    .project:hover { transform: translateY(-10px); }
 
     .project img {
       width: 100%;
@@ -210,9 +192,7 @@
       object-fit: cover;
     }
 
-    .project-content {
-      padding: 20px;
-    }
+    .project-content { padding: 20px; }
 
     .project-overlay {
       position: absolute;
@@ -225,9 +205,7 @@
       transition: 0.4s;
     }
 
-    .project:hover .project-overlay {
-      opacity: 1;
-    }
+    .project:hover .project-overlay { opacity: 1; }
 
     .project-overlay span {
       padding: 10px 25px;
@@ -236,7 +214,7 @@
       color: var(--primary);
     }
 
-    /* ================= CONTACT ================= */
+    /* CONTACT */
     .contact-box {
       background: var(--card);
       padding: 40px;
@@ -256,7 +234,6 @@
       border-radius: 8px;
     }
 
-    /* ================= FOOTER ================= */
     footer {
       text-align: center;
       padding: 30px;
@@ -264,7 +241,6 @@
       color: var(--muted);
     }
 
-    /* ================= ANIMATIONS ================= */
     .reveal {
       opacity: 0;
       transform: translateY(40px);
@@ -276,21 +252,14 @@
       transform: translateY(0);
     }
 
-    /* ================= RESPONSIVE ================= */
     @media (max-width: 768px) {
-      .about, .contact-box {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem;
-      }
+      .about, .contact-box { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.5rem; }
     }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="container nav-content">
     <div class="logo">Kowshik</div>
@@ -303,7 +272,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header>
   <div class="container hero reveal">
     <h1>N. Kowshik</h1>
@@ -315,35 +283,34 @@
   </div>
 </header>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="container reveal">
     <h2 class="section-title">About Me</h2>
     <div class="about">
       <p>
-I’m a Computer Science Engineer and Backend Developer specializing in Spring Boot, JDBC, MySQL, PL/SQL, and API development, with a strong focus on scalable and reliable backend solutions.
+        I’m a Computer Science Engineer and <strong>Java Backend Developer</strong> specializing in
+        <strong>Spring Boot, JDBC, MySQL, PL/SQL</strong>, and <strong>REST API development</strong>.
+        I focus on building scalable, secure, and reliable backend systems for real-world applications.
       </p>
       <img src="Screenshot 2024-07-16 114309.png" alt="Profile">
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="container reveal">
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title">Backend Skills</h2>
     <div class="skills-grid">
-      <div class="skill"><i class="fab fa-java"></i><h3>Java</h3></div>
-      <div class="skill"><i class="fab fa-Spring"></i><h3>Spring Boot </h3></div>
-      <div class="skill"><i class="fas JDBC"></i><h3>JDBC</h3></div>
-      <div class="skill"><i class="fab fa-html5"></i><h3>HTML</h3></div>
-      <div class="skill"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
-      <div class="skill"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+      <div class="skill"><i class="fab fa-java"></i><h3>Core Java</h3></div>
+      <div class="skill"><i class="fas fa-leaf"></i><h3>Spring Boot</h3></div>
+      <div class="skill"><i class="fas fa-database"></i><h3>JDBC</h3></div>
+      <div class="skill"><i class="fas fa-database"></i><h3>MySQL / SQL</h3></div>
+      <div class="skill"><i class="fas fa-code"></i><h3>PL/SQL</h3></div>
+      <div class="skill"><i class="fas fa-cogs"></i><h3>REST APIs</h3></div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="container reveal">
     <h2 class="section-title">Projects</h2>
@@ -353,7 +320,7 @@ I’m a Computer Science Engineer and Backend Developer specializing in Spring B
         <div class="project-overlay"><span>View Project</span></div>
         <div class="project-content">
           <h3>Task Management App</h3>
-          <p>Flutter + Firebase real-time task tracking system.</p>
+          <p>Role-based task management with Firebase backend.</p>
         </div>
       </div>
 
@@ -361,15 +328,14 @@ I’m a Computer Science Engineer and Backend Developer specializing in Spring B
         <img src="ADAS-60-1.jpg">
         <div class="project-overlay"><span>View Project</span></div>
         <div class="project-content">
-          <h3>Bus Tracking System</h3>
-          <p>Live bus tracking web application.</p>
+          <h3>Student / Bus Management System</h3>
+          <p>Java + JDBC application with database integration.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="container reveal">
     <h2 class="section-title">Contact</h2>
@@ -389,43 +355,29 @@ I’m a Computer Science Engineer and Backend Developer specializing in Spring B
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  © 2025 N. Kowshik — Built with ❤️
+  © 2025 N. Kowshik — Java Backend Developer
 </footer>
 
-<!-- JS -->
 <script>
-  /* Typing Effect */
   const texts = [
-    "Software Developer",
-    "Flutter & Web Developer",
-    "Java | Python | Firebase",
-    "Building Scalable Apps"
+    "Java Backend Developer",
+    "Spring Boot & REST APIs",
+    "JDBC | MySQL | PL/SQL",
+    "Building Scalable Backend Systems"
   ];
-  let i = 0, j = 0, current = "", deleting = false;
+  let i = 0, j = 0, deleting = false;
   const typing = document.getElementById("typing");
 
   function type() {
-    if (!deleting && j <= texts[i].length) {
-      current = texts[i].substring(0, j++);
-    } else if (deleting && j >= 0) {
-      current = texts[i].substring(0, j--);
-    }
-
-    typing.textContent = current;
-
+    typing.textContent = texts[i].substring(0, j);
+    if (!deleting) j++; else j--;
     if (j === texts[i].length) deleting = true;
-    if (deleting && j === 0) {
-      deleting = false;
-      i = (i + 1) % texts.length;
-    }
-
+    if (deleting && j === 0) { deleting = false; i = (i+1)%texts.length; }
     setTimeout(type, deleting ? 40 : 80);
   }
   type();
 
-  /* Scroll Reveal */
   const reveals = document.querySelectorAll(".reveal");
   window.addEventListener("scroll", () => {
     reveals.forEach(el => {
